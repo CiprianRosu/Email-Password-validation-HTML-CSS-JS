@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: rgb(197, 206, 206); */
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(89, 103, 139);
+   
+}
+
+.inputBox{
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    /* box-shadow: 0 15px 25px rgba(0,0,0,0.15); */
+    
+
+}
+input{
+    position: relative;
+    width: 100%;
+    outline: none;
+    padding: 10px 5px;
+    margin: 5px auto;
+    
+    
+}
+#toggleBtn{
+    position: absolute;
+    background: rgba(182, 171, 171, 0.5);
+    /* opacity: 0.2; */
+    top:65px;
+    right:10px;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggleBtn::before{
+    content: '\f06e';
+    font-family: fontAwesome;
+}
+
+#toggleBtn.hide::before{
+    content: '\f070';
+    
+}
+ ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding-left: 35px;
+    padding-top: 25px;
+    
+}
+li{
+    color: white;
+    list-style: none;
+    transition: 0,5s;
+}
+
+li::before{
+    content:'\f192';
+    width: 20px;
+    height: 10px;
+    font-family:fontAwesome;
+    display: inline-flex;
+    /* flex-direction: row; */
+
+}
+li.valid{
+    color:rgb(81, 148, 81);
+}
+
+li.valid::before{
+    content: '\f00c';
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type ="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <form class="box">
+        <div class="inputBox">
+            <input type="email" id="email" placeholder="email" onkeyup="checkEmail(this.value)">
+            <input type="password" id="pswrd" placeholder="Password" onkeyup="checkPassword(this.value)">
+            <span id="toggleBtn"></span>
+
+        </div>
+        <div class="validation">
+            <ul>
+                <li id="@">
+                    email must contain @
+                </li>
+                <li id=".">
+                    email must contain . after @something
+                </li>
+                <li id="lower">
+                    pass must contain 1 lowercase
+                </li>
+                <li id="upper">
+                    pass must contain 1 uppercase
+                </li>
+                <li id="number">
+                   pass one number
+                </li>
+                <li id="special">
+                   pass  one special character
+                </li>
+                <li id="length">
+                   pass at least 8  characters
+                </li>
+            </ul>
+        </div>
+    </form>
+    
+</body>
+<script src="script.js"></script>
+</html>
